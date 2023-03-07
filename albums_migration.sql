@@ -9,8 +9,11 @@ CREATE TABLE albums (
                         name VARCHAR(255),
                         release_date INT,
                         sales FLOAT,
-                        genre VARCHAR(255)
-);
+                        genre VARCHAR(255),
+                     UNIQUE KEY (id),
+                     UNIQUE  KEY(artist, name)
+                     );
+
 
 SELECT * FROM albums ;
 SHOW databases ;
